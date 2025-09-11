@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+   padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+     background-color: #ccc;
+}
+.main-div{
+ display: grid;
+  place-items: center; 
+}
+.sec-div{
+height:200px;
+width: 300px;
+position: relative;
+  background-color: #fff;
+  padding: 15px;
+  top: 180px;
+  border-radius: 15px;
+}
+.sec-text{
+    margin-right: 100px;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    padding-left: 65px;
+    font-family: Verdana;
+}
+.img{
+    height: 180px;
+    width: 180px;
+    position: absolute; 
+   top: 100px; 
+    z-index: 1;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+}
