@@ -14,12 +14,16 @@ import React from 'react'
 
 import { ProvideContext } from './Practice/Auth/AuthContext'
 import Login from './Practice/Auth/Login'
+import NotificationSystem from './Practice/NotificationSystem'
 
 const App = () => {
   return (
-    <ProvideContext>
-          <Login />
-    </ProvideContext>
+    // <ProvideContext>
+    //       <Login />
+    // </ProvideContext>
+    <>
+    <NotificationSystem/>
+    </>
   )
 }
 
