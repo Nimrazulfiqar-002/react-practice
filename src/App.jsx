@@ -3,29 +3,32 @@ import React from 'react'
 // import LikeDisLike from './Practice/LikeDislike'
 // import ProductQuality from './Practice/ProductQuality'
 // import FetchData from './Practice/FetchData'
-import Save from './Practice/Save'
+// import Save from './Practice/Save'
 
-// import Authentication from './Practice/UserAuth/Authentication'
+// import Homepage from './Practice/Auth/Homepage'
+
 // import Logout from './Practice/UserAuth/Logout'
 // import Login from './Practice/UserAuth/Login'
 // import { ProvideContext } from './Practice/UserAuth/AuthContext'
 // import Display from './Practice/UserAuth/Display'
 
-const App = () => {
+import { ProvideContext } from './Practice/Auth/AuthContext'
+import Login from './Practice/Auth/Login'
 
+const App = () => {
   return (
-    // <>
-    // {/* <UserCard/> */}
-    // {/* <LikeDisLike/> */}
-    // {/* <ProductQuality/> */}
-    // {/* <FetchData/> */}
-     <Save/> 
-    //  {/* <Authentication/> */}
-    // </>
-  
-    // <Display/>    
-  
+    <ProvideContext>
+          <Login />
+    </ProvideContext>
   )
 }
 
 export default App
+
+
+    
+    //  {/* <UserCard/> */}
+    //  {/* <LikeDisLike/> */}
+    //  {/* <ProductQuality/> */}
+    //  {/* <FetchData/> */}
+    //  {/* <Save/>  */}
